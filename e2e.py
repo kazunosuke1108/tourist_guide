@@ -11,12 +11,14 @@ import os
 from get_geo_info import getGeoInfo
 from get_introduction import get_introduction
 from talk import talk
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # === 設定 ===
 CHROMEDRIVER_PATH = "C:/Users/hyper/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe"
 MAP_FILENAME = "map_capture.png"
-BGM_PATH = 'C:/Users/hyper/kazu_ws/tourist_guide/audios/Cat_life.mp3'
-AUDIO_PATH = 'C:/Users/hyper/kazu_ws/tourist_guide/audios/audio.mp3'
+BGM_PATH = current_dir+'/audios/Cat_life.mp3'
+AUDIO_PATH = current_dir+'/audios/audio.mp3'
 
 
 # Pygame 初期化

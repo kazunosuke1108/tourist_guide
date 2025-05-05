@@ -1,7 +1,9 @@
 from google import genai
 # pip install -q -U google-genai
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
-with open("C:/Users/hyper/kazu_ws/tourist_guide/confidencial_information.txt", "r") as file:
+with open(current_dir+"/confidencial_information.txt", "r") as file:
     lines = file.readlines()
 
 api_key=lines[0]

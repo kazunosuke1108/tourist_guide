@@ -5,10 +5,12 @@ from get_introduction import get_introduction
 from talk import talk
 import threading
 import time
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # ファイルパス
-BGM_PATH = 'C:/Users/hyper/kazu_ws/tourist_guide/audios/Cat_life.mp3'
-AUDIO_PATH = 'C:/Users/hyper/kazu_ws/tourist_guide/audios/audio.mp3'
+BGM_PATH = current_dir+'/audios/Cat_life.mp3'
+AUDIO_PATH = current_dir+'/audios/audio.mp3'
 
 # 初期化
 pygame.init()
