@@ -13,7 +13,6 @@ from get_introduction import get_introduction
 from talk import talk
 import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
-
 # === 設定 ===
 CHROMEDRIVER_PATH = "C:/Users/hyper/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe"
 MAP_FILENAME = "map_capture.png"
